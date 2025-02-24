@@ -32,6 +32,7 @@ public class RabbitmqRestController {
         }
     }
 
+    // Sample controller to test
     @PostMapping(path = {"/api/publish/{exchange}/{routingKey}", "/api/publish/{exchange}"}, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> publish(
             @PathVariable(name = "exchange") String exchange,
